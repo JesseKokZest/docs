@@ -1,88 +1,92 @@
 ---
 title: 'Markdown syntax'
-description: 'Text, title, and styling in standard markdown'
+description: 'How to make your words look pretty!'
 icon: 'text-size'
 ---
 
-## Titles
+<Note>
+  This content has been modified by AI.
+</Note>
 
-Best used for section headers.
+## Big words (Titles)
+
+Use big words to start a new part of your page!
 
 ```md
-## Titles
+## Big words
 ```
 
-### Subtitles
+### Smaller words (Subtitles)
 
-Best used for subsection headers.
+Use smaller words under the big words!
 
 ```md
-### Subtitles
+### Smaller words
 ```
 
 <Tip>
 
-Each **title** and **subtitle** creates an anchor and also shows up on the table of contents on the right.
+Big words and smaller words show up in a list on the side of the page. Cool!
 
 </Tip>
 
-## Text formatting
+## Making words look different
 
-We support most markdown formatting. Simply add `**`, `_`, or `~` around text to format it.
+You can make your words look fun! Just put special marks around them.
 
-| Style         | How to write it   | Result          |
+| What it does  | What you type     | What you see    |
 | ------------- | ----------------- | --------------- |
-| Bold          | `**bold**`        | **bold**        |
-| Italic        | `_italic_`        | _italic_        |
-| Strikethrough | `~strikethrough~` | ~strikethrough~ |
+| Fat letters   | `**fat**`         | **fat**         |
+| Slanty letters| `_slanty_`        | _slanty_        |
+| Crossed out   | `~oops~`          | ~oops~          |
 
-You can combine these. For example, write `**_bold and italic_**` to get **_bold and italic_** text.
+You can mix them too! Type `**_fat and slanty_**` to get **_fat and slanty_** words!
 
-You need to use HTML to write superscript and subscript text. That is, add `<sup>` or `<sub>` around your text.
+Want tiny letters? Use these special words:
 
-| Text Size   | How to write it          | Result                 |
-| ----------- | ------------------------ | ---------------------- |
-| Superscript | `<sup>superscript</sup>` | <sup>superscript</sup> |
-| Subscript   | `<sub>subscript</sub>`   | <sub>subscript</sub>   |
+| What it does    | What you type            | What you see           |
+| --------------- | ------------------------ | ---------------------- |
+| Tiny up high    | `<sup>tiny up</sup>`     | <sup>tiny up</sup>     |
+| Tiny down low   | `<sub>tiny down</sub>`   | <sub>tiny down</sub>   |
 
-## Linking to pages
+## Clicking to go places (Links)
 
-You can add a link by wrapping text in `[]()`. You would write `[link to google](https://google.com)` to [link to google](https://google.com).
+You can make words that take you somewhere when you click them!
 
-Links to pages in your docs need to be root-relative. Basically, you should include the entire folder path. For example, `[link to text](/writing-content/text)` links to the page "Text" in our components section.
+Type `[click me](https://google.com)` to make [click me](https://google.com).
 
-Relative links like `[link to text](../text)` will open slower because we cannot optimize them as easily.
+The words in `[]` are what people see. The words in `()` are where they go!
 
-## Blockquotes
+## Fancy quotes (Blockquotes)
 
-### Singleline
+### One line
 
-To create a blockquote, add a `>` in front of a paragraph.
+Put a `>` before your words to make them look special!
 
-> Dorothy followed her through many of the beautiful rooms in her castle.
+> Once upon a time, there was a little duck.
 
 ```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
+> Once upon a time, there was a little duck.
 ```
 
-### Multiline
+### Many lines
 
-> Dorothy followed her through many of the beautiful rooms in her castle.
+> Once upon a time, there was a little duck.
 >
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+> The duck liked to swim and play all day!
 
 ```md
-> Dorothy followed her through many of the beautiful rooms in her castle.
+> Once upon a time, there was a little duck.
 >
-> The Witch bade her clean the pots and kettles and sweep the floor and keep the fire fed with wood.
+> The duck liked to swim and play all day!
 ```
 
-### LaTeX
+### Math stuff (LaTeX)
 
-Mintlify supports [LaTeX](https://www.latex-project.org) through the Latex component.
+For when you learn big kid math!
 
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
+<Latex>1 + 1 = 2</Latex>
 
 ```md
-<Latex>8 x (vk x H1 - H2) = (0,1)</Latex>
+<Latex>1 + 1 = 2</Latex>
 ```
